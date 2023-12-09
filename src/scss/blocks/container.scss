@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  max-width: calc($container-width-desktop + 2 * $gap-container);
+  margin: 0 auto;
+  padding-left: $gap-container;
+  padding-right: $gap-container;
+
+  @media #{$screen-desktop} {
+    padding-top: 46px;
+  }
+};

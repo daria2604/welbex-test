@@ -33,7 +33,7 @@ function scss() {
     mediaquery(), 
   ];
   return gulp
-    .src("src/scss/style.scss")
+    .src("src/scss/**/style.scss")
     .pipe(sass())
     .pipe(concat("bundle.css"))
     .pipe(postcss(plugins))
@@ -112,7 +112,7 @@ function watchFiles() {
   gulp.watch(["src/**/*.pug"], pug);
   gulp.watch(["src/**/*.html"], html);
   gulp.watch(["src/**/*.css"], css);
-  gulp.watch(["src/scss/style.scss"], scss);
+  gulp.watch(["src/scss/**/*.scss"], scss);
   gulp.watch(["src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}"], images);
   gulp.watch(["src/fonts/**/*.{woff,woff2}"], fonts);
   gulp.watch(["src/scripts/**/*.js"], scripts);

@@ -13,12 +13,14 @@ $color-button: $royal-blue;
 
 
 // Fonts 
-$font-family-custom: "Inter";
+$font-family-inter: "Inter";
+$font-family-montserrat: "Montserrat";
 $font-family-default: "Arial", "Helvetica", sans-serif;
-$font-path: "/dist/fonts";
+$font-path: "/fonts";
 
-$font-family: $font-family-custom, $font-family-default;
+$font-family: $font-family-inter, $font-family-default;
 
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 900;
@@ -43,4 +45,9 @@ $container-width-desktop: 1140px;
 $container-width-tablet: 728px;
 $container-width-mobile: 320px;
 
-$gap-container: 20px;
+$gap-container: 16px;
+
+$gap-small: 10px;
+$gap-normal: 15px;
+$gap-medium: 20px;
+$gap-big: 30px;

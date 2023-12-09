@@ -1,26 +1,44 @@
 @font-face {
-  font-family: $font-family-custom;
+  font-family: $font-family-montserrat;
+  font-weight: $font-weight-light;
+  font-style:  normal;
+  font-display: swap;
+  src: url("#{$font-path}/#{$font-family-montserrat}-Light.woff2") format("woff2"),
+       url("#{$font-path}/#{$font-family-montserrat}-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-family-montserrat;
   font-weight: $font-weight-regular;
   font-style:  normal;
   font-display: swap;
-  src: url("#{$font-path}/#{$font-family-custom}-Regular.woff2") format("woff2"),
-       url("#{$font-path}/#{$font-family-custom}-Regular.woff") format("woff");
+  src: url("#{$font-path}/#{$font-family-montserrat}-Regular.woff2") format("woff2"),
+       url("#{$font-path}/#{$font-family-montserrat}-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: $font-family-custom;
+  font-family: $font-family-inter;
+  font-weight: $font-weight-regular;
+  font-style:  normal;
+  font-display: swap;
+  src: url("#{$font-path}/#{$font-family-inter}-Regular.woff2") format("woff2"),
+       url("#{$font-path}/#{$font-family-inter}-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-family-inter;
   font-weight: $font-weight-medium;
   font-style:  normal;
   font-display: swap;
-  src: url("#{$font-path}/#{$font-family-custom}-Medium.woff2") format("woff2"),
-       url("#{$font-path}/#{$font-family-custom}-Medium.woff") format("woff");
+  src: url("#{$font-path}/#{$font-family-inter}-Medium.woff2") format("woff2"),
+       url("#{$font-path}/#{$font-family-inter}-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: $font-family-custom;
+  font-family: $font-family-inter;
   font-weight: $font-weight-bold;
   font-style:  normal;
   font-display: swap;
-  src: url("#{$font-path}/#{$font-family-custom}-Black.woff2") format("woff2"),
-       url("#{$font-path}/#{$font-family-custom}-Black.woff") format("woff");
+  src: url("#{$font-path}/#{$font-family-inter}-Black.woff2") format("woff2"),
+       url("#{$font-path}/#{$font-family-inter}-Black.woff") format("woff");
 }

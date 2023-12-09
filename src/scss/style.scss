@@ -1,6 +1,17 @@
 @import "../../node_modules/normalize.css/normalize.css";
 
-@import "abstracts/variables.scss";
+@import "abstracts/variables";
 
-@import "base/fonts.scss";
-@import "base/generic.scss";
+@import "base/fonts";
+@import "base/generic";
+
+@import "blocks/container";
+
+@import "blocks/header";
+
+@import "blocks/logo";
+
+@import "blocks/menu";
+
+@import "blocks/socials";
+@import "blocks/social";

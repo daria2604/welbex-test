@@ -1,0 +1,6 @@
+mixin socials(position, type, socialIcons)
+  div(class=`socials socials--${position} ${type}`)
+    ul.socials__list 
+      include ./socialsItem 
+      each icon in socialIcons 
+        +socials__item(icon.name)

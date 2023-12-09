@@ -1,0 +1,4 @@
+mixin menu__item(text, isHidden)
+  li(class=`menu__item ${isHidden ? 'menu__item--hidden' : ''}`)
+    a.menu__link
+      span.menu__item-text= text

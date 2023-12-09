@@ -1,0 +1,14 @@
+.socials {
+  &--header & {
+    &__list {
+      @media #{$screen-desktop} {
+        column-gap: $gap-big;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    column-gap: $gap-small;
+  }
+}

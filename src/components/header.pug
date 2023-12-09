@@ -1,0 +1,33 @@
+-
+  var menuItems = [
+    {'text': 'Услуги', 'isHidden': false},
+    {'text': 'Виджеты', 'isHidden': false},
+    {'text': 'Интеграции', 'isHidden': false},
+    {'text': 'Кейсы', 'isHidden': false},
+    {'text': 'Сертификаты', 'isHidden': true},
+  ]
+
+-
+  var socialIcons = [
+    {'name': 'telegram'},
+    {'name': 'viber'},
+    {'name': 'whatsapp'}
+  ]
+
+header.header
+  .container.header__container 
+    .header__col.header__col--logo
+      .header__logo.logo 
+        a(href="#").logo__link
+          .header__logo-image.logo__image 
+            img.logo__image-pic(src="/images/logo_welbex.svg", alt="Логотип Welbex")
+          .header__logo-text.logo__text крупный интегратор CRM в&nbsp;Росcии и ещё 8 странах
+    .header__col.header__col--menu
+      include ../components/menu
+      +menu("header__menu", menuItems)
+    .header__col.header__col--contacts 
+      .header__telephone 
+        include ../components/telephone
+        +telephone("+7 555 555-55-55")
+      include ../components/socials
+      +socials("header", "header__socials", socialIcons)

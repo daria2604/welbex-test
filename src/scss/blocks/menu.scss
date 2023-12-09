@@ -1,0 +1,37 @@
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+
+    @media #{$screen-desktop} {
+      justify-content: flex-start;
+      column-gap: $gap-big;
+    }
+  }
+
+  &__item {
+    &--hidden {
+      display: none;
+
+      @media #{$screen-tablet} {
+        display: inline-block;
+      }
+    }
+
+    &-text {
+      font-size: $font-size-mini;
+      font-weight: $font-weight-medium;
+      text-transform: uppercase;
+
+      @media #{$screen-tablet} {
+        font-size: $font-size-base;
+      }
+  
+      @media #{$screen-desktop} {
+        text-transform: none;
+      }
+    }
+  }
+};

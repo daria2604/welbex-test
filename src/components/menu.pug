@@ -1,0 +1,6 @@
+mixin menu(type, menuItems)
+  nav(class=`menu ${type}`)
+    ul.menu__list 
+      include ./menuItem
+      each item in menuItems 
+        +menu__item(item.text, item.isHidden)

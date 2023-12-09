@@ -1,0 +1,34 @@
+.social {
+  &__icon {
+    width: 100%;
+    height: 100%;
+
+    &-pic {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media #{$screen-desktop} {
+        width: 20px;
+        height: 20px;
+      }
+
+      &--telegram {
+        background-image: url('/images/icons/telegram.svg');
+      }
+
+      &--viber {
+        background-image: url('/images/icons/viber.svg');
+      }
+
+      &--whatsapp {
+        background-image: url('/images/icons/whatsapp.svg');
+      }
+    }
+  }
+    
+}
