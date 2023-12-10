@@ -1,0 +1,6 @@
+mixin offer(heading, text, type)
+  div(class=`offer offer--${type}`)
+    .offer__heading 
+      span.offer__heading-marker
+      .offer__heading-text= heading 
+    p.offer__text= text

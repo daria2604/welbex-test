@@ -1,0 +1,6 @@
+mixin offers(type, items)
+  div(class=`offers offers--${type}`)
+    ul.offers__list 
+      include ./offersItem 
+      each item in items 
+        +offers__item(item.heading, item.text, type)

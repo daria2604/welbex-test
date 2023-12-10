@@ -1,0 +1,19 @@
+.accent {
+  &--gradient {
+    background: $gradient-base;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &--case {
+    @media #{$screen-tablet} {
+      text-transform: uppercase;
+      letter-spacing: .9px;
+    }
+  }
+}

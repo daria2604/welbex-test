@@ -1,4 +1,10 @@
 .footer {
+  margin-top: 40px;
+
+  @media #{$screen-desktop} {
+    margin-top: 55px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,28 @@
+.features {
+  margin-top: 45px;
+
+  @media #{$screen-desktop} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+
+  &__heading {
+    font-size: $font-size-normal;
+    font-weight: $font-weight-medium;
+
+    @media #{$screen-desktop} {
+      text-align: right;
+
+      margin-bottom: 40px;
+      max-width: 290px;
+    }
+  }
+
+  &__button {
+    @media #{$screen-desktop} {
+      margin-top: 60px;
+    }
+  }
+}

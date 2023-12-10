@@ -1,0 +1,53 @@
+.lead {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  background: radial-gradient(304.35% 148.2% at 3.2% 3.49%, 
+    rgba(255, 246, 233, 0.10) 100%, 
+    rgba($shark, 0.10) 100%);
+  backdrop-filter: blur(7.5px);
+
+  @media #{$screen-desktop} {
+    padding-top: 90px;
+    padding-bottom: 70px;
+
+    background: none;
+  }
+
+  &__container {
+    @media #{$screen-desktop} {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__row {
+    &--title {
+      @media #{$screen-desktop} {
+        max-width: 362px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: $font-lead-title;
+    font-weight: $font-weight-regular;
+
+    @media #{$screen-tablet} {
+     font-size: $font-size-large; 
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-family-montserrat, $font-family-default;
+    font-size: $font-lead-subtitle;
+
+    margin-top: $gap-normal;
+
+    @media #{$screen-desktop} {
+      max-width: 275px;
+      margin-top: $gap-big;
+    }
+  }
+}

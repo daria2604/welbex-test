@@ -1,0 +1,25 @@
+.button {
+  display: none;
+  padding: 0;
+
+  @media #{$screen-desktop} {
+    display: block;
+  }
+
+  &:hover {
+    opacity: .9;
+    transition: $transition;
+  }
+
+  &--blue {
+    background-color: $color-button;
+  }
+
+  &--big {
+    padding: 21px 34px;
+  }
+
+  &__text {
+    font-weight: $font-weight-medium;
+  }
+}

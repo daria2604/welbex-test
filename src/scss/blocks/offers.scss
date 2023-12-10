@@ -1,0 +1,32 @@
+.offers {
+  margin-top: $gap-medium;
+  
+  &--mobile {
+    @media #{$screen-tablet} {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media #{$screen-tablet} {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 115px 141px;
+    gap: 14px 10px;
+
+    @media #{$screen-tablet} {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 35px;
+    }
+
+    @media #{$screen-desktop} {
+      grid-template-columns: 164px 135px;
+    }
+  }
+}

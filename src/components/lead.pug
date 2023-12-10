@@ -1,0 +1,33 @@
+-
+  var offersMobile = [
+    {'heading': 'Skype аудит'},
+    {'heading': '30 виджетов'},
+    {'heading': 'Dashboard'},
+    {'heading': 'Месяц аmoCRM'},
+  ]
+
+-
+  var offersTablet= [
+    {'heading': 'Виджеты', 'text': '30 готовых решений'},
+    {'heading': 'Dashboard', 'text': 'с показателями вашего бизнеса'},
+    {'heading': 'Skype Аудит', 'text': 'отдела продаж и CRM системы'},
+    {'heading': '35 дней', 'text': 'использования CRM'},
+  ]
+
+.lead 
+  .container.lead__container
+    .lead__row.lead__row--title
+      h1.lead__title Зарабатывайте больше
+        <br> 
+        <span class="accent accent--gradient accent--bold">с WELBEX</span>
+        </span>
+      p.lead__subtitle Развиваем и контролируем продажи за вас
+    .lead__row.lead__row--features
+      .features
+        p.heading.features__heading Вместе с <span class="accent accent--gradient accent--case">бесплатной консультацией</span> мы дарим:
+        include ./offers
+        +offers("mobile", offersMobile)
+        +offers("tablet", offersTablet)
+        .features__button
+          include ./button 
+          +button("button--blue button--big", "Получить консультацию")
