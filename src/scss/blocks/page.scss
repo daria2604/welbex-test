@@ -1,0 +1,7 @@
+.page {
+  padding-bottom: 60px;
+
+  @media #{$screen-tablet} {
+    padding-bottom: 20px;
+  }
+}

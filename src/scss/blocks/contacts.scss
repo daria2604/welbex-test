@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: $gap-small;
+
+  @media #{$screen-desktop} {
+    row-gap: $gap-medium;
+  }
+
+  &--footer {
+    @media #{$screen-tablet} {
+      align-items: flex-end;
+    }
+  }
+
+  &__address {
+    font-size: $font-size-small;
+
+    @media #{$screen-desktop} {
+      font-size: $font-size-base;
+    }
+  }
+}

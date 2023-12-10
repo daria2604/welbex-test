@@ -1,0 +1,12 @@
+.link {
+  font-size: $font-size-small;
+
+  @media #{$screen-desktop} {
+    font-size: $font-size-base;
+  }
+  
+  &:hover {
+    border-bottom: 1px solid $color-text;
+    transition: border .10s ease;
+  }
+}

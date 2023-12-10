@@ -1,0 +1,49 @@
+-
+  var aboutLinks = [
+    {'name': 'Партнёрская программа'},
+    {'name': 'Вакансии'},
+  ]
+
+-
+  var menuLinks = [
+    {'name': 'Расчёт стоимости'},
+    {'name': 'Услуги'},
+    {'name': 'Виджеты'},
+    {'name': 'Интеграции'},
+    {'name': 'Наши клиенты'},
+    {'name': 'Благодарность клиентов'},
+    {'name': 'Кейсы'},
+    {'name': 'Сертификаты'},
+    {'name': 'Блог на Youtube'},
+    {'name': 'Вопрос / Ответ'},
+  ]
+
+-
+  var socialIcons = [
+    {'name': 'telegram'},
+    {'name': 'viber'},
+    {'name': 'whatsapp'}
+  ]
+
+footer.footer 
+  .container.footer__container
+    .footer__content
+      .footer__row.footer__row--about
+        include ./footerRowContent
+        +footer__row-content("О компании", aboutLinks)
+      .footer__row.footer__row--menu 
+        include ./footerRowContent
+        +footer__row-content("Меню", menuLinks)
+      .footer__row.footer__row--contacts
+        p.heading.heading--footer.heading--small.heading--grey Контакты
+        address.contacts.contacts--footer
+          .contacts__telephone
+            include ./telephone 
+            +telephone("+7 555 555-55-55")
+          .contacts__socials
+            include ./socials 
+            +socials("footer", "footer__socials", socialIcons)
+          p.contacts__address Москва, Путевой проезд 3с1, к 902
+    .footer__copyright 
+      .footer__text &copy;WELBEX 2022. Все права защищены.
+      a(href="#").footer__link Политика конфиденциальности

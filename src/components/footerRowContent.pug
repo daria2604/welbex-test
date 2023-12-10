@@ -1,0 +1,4 @@
+mixin footer__row-content(heading, links)
+  p.heading.heading--footer.heading--small.heading--grey= heading
+    include ./links
+    +links("footer__links", links)

@@ -1,0 +1,22 @@
+.heading {
+  &--small {
+    font-size: $font-size-mini;
+    font-weight: 700;
+    letter-spacing: .6px;
+
+    @media #{$screen-desktop} {
+      font-size: $font-size-small;
+      letter-spacing: .7px;
+    }
+  }
+
+  &--grey {
+    text-transform: uppercase;
+
+    color: $color-title;
+  }
+
+  &--footer {
+    margin-bottom: $gap-medium;
+  }
+}

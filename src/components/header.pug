@@ -23,11 +23,11 @@ header.header
             img.logo__image-pic(src="/images/logo_welbex.svg", alt="Логотип Welbex")
           .header__logo-text.logo__text крупный интегратор CRM в&nbsp;Росcии и ещё 8 странах
     .header__col.header__col--menu
-      include ../components/menu
+      include ./menu
       +menu("header__menu", menuItems)
     .header__col.header__col--contacts 
       .header__telephone 
-        include ../components/telephone
+        include ./telephone
         +telephone("+7 555 555-55-55")
-      include ../components/socials
+      include ./socials
       +socials("header", "header__socials", socialIcons)

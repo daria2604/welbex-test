@@ -12,6 +12,10 @@
   }
 
   &__item {
+    &:hover {
+      opacity: $opacity;
+      transition: $transition;
+    }
     &--hidden {
       display: none;
 
