@@ -16,6 +16,9 @@
 
 header.header
   .container.header__container 
+    include ./ball
+    +ball("purple", "top", "header")
+    +ball("red", "middle", "header", "sharp")
     .header__col.header__col--logo
       .header__logo.logo 
         a(href="#").logo__link

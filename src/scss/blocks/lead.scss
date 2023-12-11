@@ -1,17 +1,44 @@
 .lead {
+  position: relative;
+  overflow: hidden;
+  
   padding-top: 40px;
   padding-bottom: 60px;
 
   background: radial-gradient(304.35% 148.2% at 3.2% 3.49%, 
-    rgba(255, 246, 233, 0.10) 100%, 
-    rgba($shark, 0.10) 100%);
-  backdrop-filter: blur(7.5px);
+  rgba(255, 246, 233, 0.10) 0%, 
+  rgba($shark, 0.10) 26.62%, 
+  rgba($shark, 0.10) 52.1%, 
+  rgba($shark, 0.01) 70.17%, 
+  rgba($shark, 0.00) 100%);
+
+  z-index: 1;
 
   @media #{$screen-desktop} {
     padding-top: 90px;
     padding-bottom: 70px;
 
     background: none;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: -55px;
+
+    width: 211px;
+    height: 210px;
+
+    border-radius: 210px;
+    background-color: $old-brick;
+
+    filter: blur($blur-light);
+
+    content: "";
+
+    @media #{$screen-desktop} {
+      content: none;
+    }
   }
 
   &__container {

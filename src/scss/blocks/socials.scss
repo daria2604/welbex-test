@@ -11,4 +11,11 @@
     display: flex;
     column-gap: $gap-small;
   }
+
+  &__link {
+    &:hover {
+      opacity: $opacity;
+      transition: $transition;
+    }
+  }
 }

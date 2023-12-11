@@ -14,8 +14,13 @@
     {'heading': '35 дней', 'text': 'использования CRM'},
   ]
 
-.lead 
+.lead
+  include ./ball
+  +ball("purple", "right", "lead")
+  +ball("red", "bottom", "lead") 
   .container.lead__container
+    include ./ball
+    +ball("red", "bottom", "features") 
     .lead__row.lead__row--title
       h1.lead__title Зарабатывайте больше
         <br> 

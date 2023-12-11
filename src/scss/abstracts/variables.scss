@@ -6,6 +6,8 @@ $royal-blue: #4077F3;
 $yellow-orage: #FCB045;
 $torch-red: #FD1D1D;
 $shark: #1a1d23;
+$royal-purple: #833AB4;
+$old-brick: #961A1A;
 
 $color-background: $woodsmoke;
 $color-text: $athens-gray;
@@ -56,9 +58,14 @@ $gap-normal: 15px;
 $gap-medium: 20px;
 $gap-big: 30px;
 
-// transitions
+// Sizes {
+$header-height-mobile: 55px;
+
+// Others
 $opacity: .8;
 $transition: all .2s ease;
 
-//Gradients 
+$blur-light: 196px;
+
+// Gradients 
 $gradient-base: linear-gradient(90deg, $yellow-orage 36.99%, $torch-red 100%);
