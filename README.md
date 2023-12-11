@@ -4,3 +4,6 @@
 Адаптивная верстка страницы с микроанимацией.  
 
 #### Стек: Pug, SCSS, Gulp
+
+![Desktop](src/images/desktop.jpg)
+![Mobile](src/images/mobile.jpg)
